@@ -1,0 +1,49 @@
+//POLICE//
+$police-title:'Didact Gothic', sans-serif;
+$police-color:#363636;
+$police-uppercase:uppercase;
+$police-weight:bold;
+$police-h1:3.1rem;
+$police-h2:3rem;
+$police-h3:2.6rem;
+$police-p:1.5rem;
+$police-position:center;
+$police-spacing:2px;
+
+
+
+//font awesome//
+$awesome-color:#363636; 
+$awesome-size:2.5rem;
+
+//border cards bedrooms//
+
+$border-cards:grey solid 1px;
+    
+
+
+
+@mixin custum-h2(){
+font-size: $police-h2;
+text-transform: $police-uppercase;
+color:$police-color;
+text-align: $police-position;
+font-family: $police-title;
+letter-spacing: $police-spacing;
+
+}
+
+
+@mixin custum-border{
+    border-top:$border-cards;
+    border-right:$border-cards;
+    border-bottom: $border-cards;
+}
+
+@mixin custum-border-2{
+    border-left:$border-cards;
+    border-right:$border-cards;
+    border-bottom: $border-cards;
+}
+
+

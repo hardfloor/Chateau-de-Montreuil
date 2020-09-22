@@ -1,0 +1,265 @@
+#about-us {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        position: relative;
+        opacity: 1;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     
+    }
+
+    .bgimg-1 {
+        background-image: url("../src/about-us/first.png");
+        min-height: 100vh;
+        padding-top: 200px;
+@include responsive (mediumtab){
+    background-image: url("../src/about-us/first800pxt.png");
+
+}
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 70%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+
+            .border {
+                background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                font-size: 10vw;
+             font-family: $police-title;
+                animation: reveal 3000ms ease-in-out forwards 200ms,
+                    glow 2500ms linear 2000ms;
+
+                @keyframes reveal {
+                    80% {
+                        letter-spacing: 8px;
+                    }
+
+                    100% {
+                        background-size: 300% 300%;
+                    }
+                }
+
+                @keyframes glow {
+                    40% {
+                        text-shadow: 0 0 8px #fff;
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+
+    .passion {
+      
+        background-color: white;
+        /* text-align: center; */
+        padding: 50px 80px;
+        text-align: justify;
+      
+
+        width: 50vw;
+
+        @include responsive (tab){
+
+            width: 90vw;
+            margin:auto;
+        }
+    }
+
+
+
+    .bgimg-2 {
+        background-image: url("../src/about-us/second.png");
+        min-height: 100vh;
+        @include responsive (mediumtab){
+            background-image: url("../src/about-us/second800pxt.png");
+           
+        
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 70%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+
+            .border {
+                background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                font-size: 10vw;
+                font-family: $police-title;
+                animation: reveal 3000ms ease-in-out forwards 200ms,
+                    glow 2500ms linear 2000ms;
+
+                @keyframes reveal {
+                    80% {
+                        letter-spacing: 8px;
+                    }
+
+                    100% {
+                        background-size: 300% 300%;
+                    }
+                }
+
+                @keyframes glow {
+                    40% {
+                        text-shadow: 0 0 8px #fff;
+                    }
+                }
+
+            }
+        }
+
+
+
+
+
+
+    }
+
+    .above-paralax {
+        position: relative;
+        background-color: $police-color;
+
+
+        .storytelling {
+          
+            background-color: $police-color;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+            width: 50vw;
+            margin-left: auto;
+            @include responsive (tab){
+
+                width: 90vw;
+                margin:auto;
+            }
+
+        }
+
+        .commitment {
+           
+            background-color: $police-color;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+            width: 50vw;
+
+            @include responsive (tab){
+
+                width: 90vw;
+                margin:auto;
+            }
+        }
+
+
+    }
+
+    .bgimg-3 {
+        background-image: url("../src/about-us/third.png");
+        min-height: 100vh;
+        @include responsive (mediumtab){
+            background-image: url("../src/about-us/third800px.png");
+
+        
+        }
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 70%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+
+            .border {
+                background: 50% 100% / 50% 50% no-repeat radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                font-size: 10vw;
+                font-family: $police-title;
+                animation: reveal 3000ms ease-in-out forwards 200ms,
+                    glow 2500ms linear 2000ms;
+
+                @keyframes reveal {
+                    80% {
+                        letter-spacing: 8px;
+                    }
+
+                    100% {
+                        background-size: 300% 300%;
+                    }
+                }
+
+                @keyframes glow {
+                    40% {
+                        text-shadow: 0 0 8px #fff;
+                    }
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+    .passion {
+
+        h3 {
+            font-family: $police-title;
+            font-size: $police-h3;
+            color: $police-color;
+
+
+        }
+
+        p {
+            font-size: 2rem;
+            color: $police-color;
+            font-family: $police-title;
+        }
+    }
+
+    .storytelling,
+    .commitment {
+
+
+        h3 {
+            font-family: $police-title;
+            font-size: $police-h3;
+            color: white;
+            background-color: $police-color;
+
+        }
+
+        p {
+            font-size: 2rem;
+            color: white;
+            font-family: $police-title;
+            background-color: $police-color;
+            margin-right: o0;
+        }
+    }
+
+
+
+}

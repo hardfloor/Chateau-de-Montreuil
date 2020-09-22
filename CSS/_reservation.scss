@@ -1,0 +1,175 @@
+#reservation {
+    .title {
+        width: 40vw;
+        margin: auto;
+
+        @include responsive (smalldesk) {
+            width: 60vw
+        }
+
+        @include responsive (tab) {
+            width: 85vw;
+
+        }
+
+        h2 {
+            @include custum-h2();
+            text-align: center;
+            position: relative;
+            margin-bottom: 80px;
+            padding-top: 150px;
+
+
+            &::before {
+                content: "";
+                background-image: url(/src/deco/DSC06065.png);
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 100px;
+
+                @include responsive (smalldesk) {
+                    left: 40px;
+
+                }
+
+                @include responsive (tab) {
+                    width: 30px;
+
+                }
+
+            }
+
+
+            &::after {
+                content: "";
+                background-image: url(/src/deco/DSC06065.png);
+                width: 50px;
+                height: 50px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 100px;
+
+                @include responsive (smalldesk) {
+                    right: 40px;
+
+                }
+
+                @include responsive (tab) {
+                    width: 30px;
+
+                }
+
+
+
+            }
+
+
+
+        }
+    }
+
+    table {
+
+        width: 40vw;
+        margin: auto;
+        height: 30vh;
+        font-size: 2rem;
+        font-family: $police-title;
+        color: $police-color;
+
+        @include responsive (smalldesk) {
+            font-size: 1.5rem;
+
+        }
+
+        @include responsive (tab) {
+            font-size: 1.3rem;
+            width: 65vw;
+        }
+
+        @include responsive (mediumdesk){
+            width: 75vw;
+        }
+
+        @include responsive (smartphone) {
+
+            width: 80vw;
+        }
+
+        caption {
+
+            padding-bottom: 30px;
+        }
+
+
+
+        th:not(.blank-th),
+        td {
+
+            border: 1px solid grey;
+        }
+
+        tbody tr td:nth-child(1) {
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        tbody tr td:nth-child(2),
+        tr td:nth-child(3) {
+            text-align: center;
+        }
+
+        tfoot td {
+            padding-left: 10px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .booking-1 {
+        position: relative;
+        height: 100px;
+
+        a {
+            text-decoration: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 10px;
+            font-family: $police-title;
+            font-size: 2rem;
+            border: none;
+            background-color: rgba(70, 69, 69, 1);
+            color:white;
+
+            font-weight: bold;
+            font-size: 2rem;
+            border-radius: 5px;
+
+            letter-spacing: $police-spacing;
+
+            @include responsive (tab) {
+                font-size: 1.5rem;
+            }
+
+            &:hover {
+                background-color: #999;
+                color: rgb(37, 36, 36)
+            }
+
+            &:active {
+                border: 3px yellow solid;
+                background-color: rgb(243, 192, 192);
+                color: white;
+
+            }
+        }
+    }
+
+
+}

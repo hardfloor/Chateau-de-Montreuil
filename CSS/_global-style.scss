@@ -1,0 +1,27 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    @include responsive (mediumdesk) {
+        font-size:59.3%; //9.5px=1rem; 9.5/16px = 59.3%//
+    }
+
+
+    @include responsive (smalldesk) {
+        font-size:56.25%; //9px=1rem; 9/16px = 56.2%//
+    }
+    @include responsive (tab) {
+        font-size:50%; //8px=1rem; 8/16px = 50%//
+    }
+    @include responsive (smartphone) {
+        font-size:43%; //7px=1rem; 7/16px = 43%//
+    }
+ 
+}

@@ -1,0 +1,116 @@
+footer {
+
+    width: 100vw;
+    height: 300px;
+padding-top: 40px;
+    background: white;
+    padding-bottom: 200px;
+    @include responsive (mediumtab){
+        padding-bottom: 50px;
+    }
+
+    .sub-footer {
+    /* padding-top: 0px; */
+        width: 60vw;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        /*  margin-top: 60px; */
+        justify-content: space-between;
+        align-items: center;
+        @include responsive (smalldesk) {
+            width: 90vw;
+        }
+
+        .map {
+            a {
+                width: 80%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+           
+                img {
+                    width: 100%;
+                    height: auto;
+
+                    object-fit: cover;
+                 
+                }
+            }
+        }
+
+        .credit {
+            display: flex;
+            width: 80%;
+            height: 50px;
+            justify-content: space-around;
+            margin-top: 30px;
+
+            @include responsive (tab){
+                width: 90%;
+            }
+
+            p,
+            a {
+                font-size: 1.5rem;
+                /* margin-right: 15px; */
+                text-decoration: none;
+                color: $police-color;
+                letter-spacing: 1px;
+                font-family: $police-title;
+                @include responsive (mediumdesk) {
+                    font-size:1.3rem;
+                    }
+
+                &:hover:not(p) {
+                    font-weight: bolder;
+
+                }
+
+
+            }
+
+            i {
+                font-size: 2rem;
+                margin-right: 15px;
+                text-decoration: none;
+                color: $police-color;
+                letter-spacing: 1px;
+                @include responsive (tab) {
+                    font-size: 3rem;}
+            
+
+
+                &:hover:not(p) {
+                    font-weight: bolder;
+
+                }
+            }
+  
+
+
+
+        .legal{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            @include responsive (tab) {
+                ;
+        }
+    }
+
+        .networks{
+            display: flex;
+    @include responsive (mediumtab){
+       
+    }
+
+
+        }
+    
+
+        }
+    }
+}

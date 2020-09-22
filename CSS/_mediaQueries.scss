@@ -1,0 +1,32 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width:360px) { @content };
+    }
+
+    @if $breakpoint == smartphone {
+        @media only screen and (max-width:414px) { @content };
+    }
+
+
+    @if $breakpoint == mediumtab {
+        @media only screen and (max-width:800px) { @content };
+    }
+
+
+
+
+
+    @if $breakpoint == tab {
+        @media only screen and (max-width:1024px) { @content };
+    }
+
+
+    @if $breakpoint == smalldesk {
+        @media only screen and (max-width:1280px) { @content };
+    }
+
+    @if $breakpoint == mediumdesk {
+        @media only screen and (max-width:1700px) { @content };
+    }
+}
+

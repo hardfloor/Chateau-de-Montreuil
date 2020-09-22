@@ -1,0 +1,677 @@
+.hero {
+
+    /* VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO*/
+    /* VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO VIDEO*/
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+
+    @include responsive (tab) {
+        background-image: url(/src/video/Montreuil-capture.jpg);
+        background-size: cover;
+        background-position: 50%;
+        height: 100vh;
+    }
+
+    @include responsive (smartphone) {
+        background-position: 60%;
+    }
+
+    video {
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-width: 100%;
+        max-height: 100%;
+
+        object-fit: cover;
+
+        @include responsive (mediumdesk) {
+            min-height: 100%;
+
+
+        }
+
+        @include responsive (mediumtab) {
+            display: none;
+        }
+
+
+
+
+
+
+
+
+    }
+
+    /* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO*/
+    /* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO*/
+    .intro {
+
+        position: relative;
+        background-color: rgba(rgb(255, 255, 255), 0.7);
+
+        left: 20%;
+        top: 400px;
+        width: 350px;
+        height: 350px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 5px;
+
+
+
+        @include responsive (mediumdesk) {
+            top: 250px;
+        }
+
+
+        @include responsive (smalldesk) {
+            top: 200px;
+
+        }
+
+     
+
+        @include responsive (tab) {
+            width: 310px;
+            height: 160px;
+            top: 600px;
+            left: 11%;
+
+        }
+
+        @include responsive (phone) {
+            top: 520px;
+            left: 7%;
+        }
+
+        .replace {
+            display: none;
+
+            @include responsive (tab) {
+
+
+                display: block;
+
+            }
+
+
+
+        }
+
+        h1,
+        p {
+            color: $police-color;
+            font-family: $police-title;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: $police-h1;
+
+            @include responsive (tab) {
+                display: none;
+                font-size: 1.8rem;
+
+            }
+        }
+
+        p {
+            font-size: $police-p;
+
+            @include responsive (tab) {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        /* CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION*/
+        /* CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION CALL-TO-ACTION*/
+
+        a {
+
+            pointer-events: visible;
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            transform: translateX(-50%);
+            border: none;
+            background-color: rgb(177, 175, 175);
+            color: $police-color;
+            font-family: $police-title;
+            letter-spacing: $police-spacing;
+            width: 200px;
+            height: 40px;
+            font-weight: bold;
+            font-size: 2rem;
+            border-radius: 5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 8px;
+            &:hover {
+                background-color: #333;
+            
+            color: rgb(233, 227, 227);
+            }
+               
+
+            @include responsive (tab) {
+
+                width: 150px;
+            }
+
+            @include responsive (tab) {
+                width: 100px;
+                height: 30px;
+                font-size: 1.5rem;
+            }
+
+            /*    &:hover {
+                background-color: rgba(247, 182, 4, 1); */
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#index {
+
+
+    /* CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL*/
+    /* CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL*/
+    .carousel {
+
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+
+        @include responsive (smalldesk) {
+            height: 110vh;
+        }
+
+        @include responsive(tab) {
+            margin-top: 0px;
+        }
+
+
+
+        .title {
+
+            width: 40vw;
+            margin: auto;
+
+            @include responsive (mediumtab) {
+                width: 60vw;
+            }
+
+            h2 {
+                @include custum-h2();
+                text-align: center;
+                position: relative;
+                margin-bottom: 80px;
+                padding-top: 150px;
+
+                @include responsive (mediumtab) {
+                    font-size: 2.5rem;
+                }
+
+                &::before {
+                    content: "";
+                    background-image: url(/src/deco/index-deco-left.png);
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 100px;
+
+                    @include responsive (mediumdesk) {
+                        left: 20px;
+                    }
+
+                    @include responsive (smalldesk) {
+                        left: -30px;
+                    }
+
+                    @include responsive (mediumtab) {
+                        display: none;
+                    }
+
+
+                }
+
+
+                &::after {
+                    content: "";
+                    background-image: url(/src/deco/index-deco-right.png);
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 100px;
+
+                    @include responsive (mediumdesk) {
+                        right: 20px;
+                    }
+
+                    @include responsive (smalldesk) {
+                        right: -30px;
+                    }
+
+                    @include responsive (mediumtab) {
+                        transform: translateX(50%) rotate(-90deg);
+                        right: 50%;
+                        top: 50%;
+                    }
+
+
+                }
+
+
+
+            }
+        }
+
+        .slide-container {
+            max-width: 60vw;
+            position: relative;
+            margin: auto;
+            box-shadow:  7px 7px 11px #bfbfbf, 
+            -7px -7px 11px #ffffff;
+
+
+              @include responsive (mediumtab) {
+
+                max-width: 100vw;
+            }
+
+        
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+
+            .prev {
+                @include responsive (mediumtab) {}
+
+            }
+
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+
+                /*     img {
+                    @include responsive (mediumtab) {
+
+                        max-width: 100%;
+                        max-height: 100%;
+                    }
+
+                } */
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+    }
+
+
+    /* CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS*/
+    /* CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS CARDS*/
+
+    .castle-history {
+        position: relative;
+        width: 100vw;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        height: 100vh;
+        background-color: white;
+        padding-bottom: 170px;
+
+        @include responsive (tab) {
+
+            height: 170vh;
+
+        }
+
+
+        .title {
+            width: 40vw;
+            margin: auto;
+
+            @include responsive (tab) {
+
+                margin: 0;
+
+            }
+
+            @include responsive (mediumtab) {
+                width: 80vw;
+            }
+
+            h2 {
+                @include custum-h2();
+                text-align: center;
+                position: relative;
+                margin-bottom: 80px;
+                padding-top: 150px;
+
+                @include responsive (mediumtab) {
+                    font-size: 2.5rem;
+                }
+
+                &::before {
+                    content: "";
+                    background-image: url(/src/deco/index-deco-left.png);
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 100px;
+
+                    @include responsive (mediumdesk) {
+                        left: 20px;
+                    }
+
+                    @include responsive (smalldesk) {
+                        left: -20px;
+                    }
+
+                    @include responsive (mediumtab) {
+                        display: none;
+                    }
+
+
+                }
+
+
+                &::after {
+                    content: "";
+                    background-image: url(/src/deco/index-deco-right.png);
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    right: 100px;
+
+                    @include responsive (mediumdesk) {
+                        right: 20px;
+                    }
+
+                    @include responsive (smalldesk) {
+                        right: -20px;
+                    }
+
+                    @include responsive (mediumtab) {
+                        transform: translateX(50%) rotate(-90deg);
+                        right: 50%;
+                        top: 50%;
+                    }
+
+
+                }
+
+
+
+            }
+        }
+
+
+        .sub-card {
+            position: relative;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 50vh;
+
+
+
+            
+       
+            @include responsive (smalldesk) {
+
+                height: 65vh;
+
+            }
+
+            @include responsive (tab) {
+
+                flex-direction: column;
+               
+
+            }
+
+
+
+
+
+
+
+
+            .card {
+                position: relative;
+                max-width: 330px;
+                height: 300px;
+                background: #e7ecee;
+                margin: 30px 10px;
+                padding: 20px 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                box-shadow: 3px 3px 3px #d0d4d6;
+                transition: 0.5s ease-in-out;
+                border-radius: 5px;
+
+                @include responsive (smalldesk) {
+                    max-width: 250px;
+                    height: 230px;
+                    margin-bottom: 60px;
+                }
+
+                &:hover {
+                    height: 400px;
+
+
+
+
+                }
+
+
+
+                .content {
+                    position: relative;
+                    /* margin-top: 40px; */
+                    /* padding: 10px 15px; */
+
+                    text-align: center;
+                    color: #111;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 0.5s ease-in-out;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    h3 {
+                        font-size: $police-h3;
+                        /* margin-bottom: 10px; */
+                        color: $police-color;
+                        font-family: $police-title;
+                        position: absolute;
+                        top: -40px;
+                    }
+
+                    p {
+                        font-size: $police-p;
+                        color: $police-color;
+                        font-family: $police-title;
+                    }
+                }
+
+                &:hover .content {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: 30px;
+                    transition-delay: 0.3s;
+
+                }
+
+                a {
+                    position: absolute;
+                    padding: 10px;
+                    bottom: -65px;
+                    /* transform: translateX(-50%); */
+
+                    border-radius: 5px;
+                    box-shadow: 6px 6px 8px #d0d4d6;
+                    background-color: rgba(70, 69, 69, 0.9);
+                    color: white;
+                    text-decoration: none;
+                    font-size: $police-p;
+                    font-family: $police-title;
+
+                    @include responsive (tab) {
+                        bottom: -45px;
+                    }
+
+                }
+
+                .imgbox {
+
+                    position: relative;
+                    width: 260px;
+                    height: 260px;
+                    top: -60px;
+                    /*  left: 20px; */
+                    z-index: 1;
+                    box-shadow: 3px 3px 3px #d0d4d6;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include responsive (smalldesk) {
+                        width: 210px;
+                        box-shadow: none;
+                    }
+
+                    img {
+                        max-width: 100%;
+                        border-radius: 4px;
+
+
+                    }
+
+                    .go-down {
+                        margin-top: 20px;
+                        width: 0;
+                        height: 0;
+                        border-left: 30px solid transparent;
+                        border-right: 30px solid transparent;
+                        border-top: 30px solid rgba(20, 10, 16, 0.1);
+                        border-radius: 5px;
+
+                    }
+                }
+
+
+            }
+
+
+
+
+
+        }
+
+    }
+}

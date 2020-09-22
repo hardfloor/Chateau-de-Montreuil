@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À coté</title>
+    <link rel="icon" type="image/png" href="./src/Favicon/favicon.png" />
+    <!--flavicon-->
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="icon" type="image/png" href="./src/Favicon/favicon.png" />
+    <!--flavicon-->
+    <link rel="stylesheet" href="/CSS/swiper.min.css"> <!-- SWIPER GOOD PLAN -->
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- CDN JQUERY POUR FANCYBOX -->
+</head>
+
+<body>
+    <header id="main-index">
+
+        <nav class="navbar">
+
+            <div class="nav-menu">
+                <ul class="main-ul">
+                    <li class="underline dropdown"><a href="./index.html">Le château</a>
+                        <ul>
+                            <li><a href="./index.html#gallery">Gallerie</a> </li>
+                            <li><a href="./index.html#castle-history">Histoire</a> </li>
+                        </ul>
+                    </li>
+                    <li class="underline dropdown"><a href="./bedrooms.html">Les Chambres</a>
+                        <ul>
+                            <li><a href="./bedrooms.html#bed-king">Du Roi</a> </li>
+                            <li><a href="./bedrooms.html#bed-ladyship">De la Contesse</a> </li>
+                            <li><a href="./bedrooms.html#bed-empire">Empire</a> </li>
+                            <li class="logo"><a href="./bedrooms.html#bed-tapestry">En Jouy</a> </li>
+                            <li><a href="./bedrooms.html#bed-alcove">Alcove</a> </li>
+                        </ul>
+
+
+                    </li>
+                    <li class="underline dropdown"><a href="./about-us.html">A notre sujet</a>
+                        <ul>
+                            <li><a href="./about-us.html#passion">Une passion</a> </li>
+                            <li><a href="./about-us.html#storytelling">Une histoire</a> </li>
+                            <li><a href="./about-us.html#commitments">Une volonté</a> </li>
+                        </ul>
+
+                    </li>
+                    <li><a href="./index.html"><span></span><img src="src/Logo-Montreuil-Final.jpg"
+                                alt="le logo du château"></a>
+                    </li>
+                    <li class="underline dropdown"><a href="#near.html">Détentes</a>
+                        <ul>
+                            <li><a href="./near.html#nature">Nature</a></li>
+                            <li><a href="./near.html#culture">Culture</a> </li>
+                            <li><a href="./near.html#address">Adresses</a> </li>
+                        </ul>
+                    </li>
+                    <li><a href="./reservation.html">Réservation</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar-mobile">
+            <a href="./index.html"><img src="src/Logo-Montreuil-Final.jpg" alt="le logo du château"></a>
+            <div id="dropdown">
+                <div class="nav-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div class="dropdown-child">
+                    <ul class="main-ul">
+                        <li class="underline dropdown"><a href="./index.html">Le château</a>
+                            <ul>
+                                <li class="drop-1"><a href="./index.html#gallery">Gallerie</a> </li>
+                                <li class="drop-1"><a href="./index.html#castle-history">Histoire</a> </li>
+                            </ul>
+                        </li>
+                        <li class="underline dropdown"><a href="./bedrooms.html">Les Chambres</a>
+                            <ul>
+                                <li class="drop-2"><a href="./bedrooms.html#bed-king">Du Roi</a> </li>
+                                <li class="drop-2"><a href="./bedrooms.html#bed-ladyship">De la Contesse</a> </li>
+                                <li class="drop-2"><a href="./bedrooms.html#bed-empire">Empire</a> </li>
+                                <li class="drop-2"><a href="./bedrooms.html#bed-tapestry">En Jouy</a> </li>
+                                <li class="drop-2"><a href="./bedrooms.html#bed-alcove">Alcove</a> </li>
+                            </ul>
+
+
+                        </li>
+                        <li class="underline dropdown"><a href="./about-us.html">A notre sujet</a>
+                            <ul>
+                                <li class="drop-3"><a href="./about-us.html#passion">Une passion</a> </li>
+                                <li class="drop-3"><a href="./about-us.html#storytelling">Une histoire</a> </li>
+                                <li class="drop-3"><a href="./about-us.html#commitments">Une volonté</a> </li>
+                            </ul>
+
+
+                        <li class="underline dropdown"><a href="./near.html">Détentes</a>
+                            <ul>
+                                <li class="drop-4"><a href="./near.html#nature">Nature</a></li>
+                                <li class="drop-4"> <a href="./near.html#culture">Culture</a> </li>
+                                <li class="drop-4"><a href="./near.html#address">Adresses</a> </li>
+                            </ul>
+                        </li>
+                        <li class="underline"><a href="./reservation.html">Réservation</a></li>
+                        <li class="underline"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+    <main id="near">
+        <div id="startchange"></div>
+
+        <section id="nature">
+            <div class="title">
+                <h2>nature</h2>
+            </div>
+            <div class="nature-pic">
+
+                <a class="box a" href="src/near/ILIMG/DSC05752.png" data-fancybox="gallery"
+                    data-caption="Le port de Nort sur Erdre">
+                    <img class="ab" src="src/near/thumb/DSC05752.png" alt="Le port de Nort sur Erdre" />
+                </a>
+
+                <a class="box b" href="src/near/ILIMG/DSC05775.png" data-fancybox="gallery"
+                    data-caption="La rigole alimentaire">
+                    <img src="src/near/thumb/DSC05775.png" alt="Le canal de la rigole alimentaire" />
+                </a>
+
+
+
+                <a class="box c" href="src/near/ILIMG/DSC06184.png" data-fancybox="gallery" data-caption="En forêt">
+                    <img src="src/near/thumb/DSC06184.png" alt="Une vue de du ciel à travers les arbres" />
+                </a>
+
+                <a class="box d" href="src/near/ILIMG/DSC06159.png" data-fancybox="gallery"
+                    data-caption="Les dépendances">
+                    <img src="src/near/thumb/DSC06159.png" alt="Un réservoir d'eau avec le ciel en fond" />
+                </a>
+
+                <a class="box e" href="src/near/ILIMG/DSC06252.png" data-fancybox="gallery" data-caption="Tôt le matin">
+                    <img src="src/near/thumb/DSC06252.png" alt="Le soleil levant filtrant à travers un arbre" />
+                </a>
+
+
+
+                <a class="box f" href="src/near/ILIMG/DSC06185.png" data-fancybox="gallery"
+                    data-caption="L'ancienne entrée du château">
+                    <img src="src/near/thumb/DSC06185.png" alt="Allée boisée du château" />
+                </a>
+
+
+
+                <a class="box g" href="src/near/ILIMG/Panorama-sans-titre3.png" data-fancybox="gallery"
+                    data-caption="Du haut du château">
+                    <img src="src/near/thumb/Panorama-sans-titre3.png"
+                        alt="Panorama d'un horizon nuaguax sur ciel bleu" />
+                </a>
+
+            </div>
+        </section>
+
+        <section id="culture">
+
+            <div class="culture">
+                <div class="title">
+                    <h2>culture</h2>
+
+                </div>
+
+
+
+
+                <div class="main-flip">
+
+
+
+                    <div class="flip flip-1">
+                        <div class="front front-1" style="background-image: url(./src/culture/les_jeudis_du_port.png)">
+                            <h2 class="text-shadow">Les Jeudis du port</h2>
+                        </div>
+                        <div class="back"style="background-image: url(./src/culture/les_jeudis_du_port-2.png)">
+                            <h2>Les jeudis du port</h2>
+                            <p>Une ambiance conviviale pour partager des moments de détente aux
+                                bords de l'Erdre. Cette rencontre culturelle vous réserve bien des surprises!</p>
+                            <a href="https://www.facebook.com/jeudisduportnse/" target="_blank"rel="noopener">En savoir plus</a>
+
+                        </div>
+                    </div>
+                    <div class="flip flip-2">
+                        <div class="front front-2"
+                            style="background-image: url(./src/culture/Rendez-vous_de_l’Erdre.png)">
+                            <h2 class="text-shadow">Les rendez-vous de l'Erdre</h2>
+                        </div>
+                        <div class="back" style="background-image: url(./src/culture/Rendez-vous_de_l’Erdre-2.png)">
+                            <h2>Les rendez-vous de l'Erdre</h2>
+                            <p>Ce festival place toujours le Jazz au cœur de sa programmation, mais d’une manière
+                                différente : artistes ligériens, concerts dans des parcs, adaptation du programme
+                                nautique….
+                            </p>
+                            <a href="http://www.rendezvouserdre.com/"
+                                target="_blank"rel="noopener">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="flip flip-3">
+                        <div class="front" style="background-image: url(./src/culture/palais_des_congres.png)">
+                            <h2 class="text-shadow">La cité des congres</h2>
+                        </div>
+                        <div class="back"style="background-image: url(./src/culture/palais_des_congres-2.png)">
+                            <h2>La cité des congres</h2>
+                                <p>Une salle de concert unique à Nantes à l'acoustique incroyable et au confort
+                                    incomparable </p>
+                                <a href="https://lacite-nantes.fr/"
+                                    target="_blank"rel="noopener">En savoir plus</a>
+                        </div>
+                    </div>
+                    <div class="flip flip-4">
+                        <div class="front front-4" style="background-image: url(./src/culture/le-nuit-de-l-erdre.png)">
+                            <h2 class="text-shadow"rel="noopener">Les nuits de l'Erdre</h2>
+                        </div>
+                        <div class="back"style="background-image: url(./src/culture/le-nuit-de-l-erdre-2.png)">
+                            <h2>Les nuits de l'Erdre</h2>
+                            <p>En juin, Nort sur Erdre prend des allures de festival avec une programmation tres
+                                variée.
+                            </p>
+                            <a href="https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Montreuil_(Nort-sur-Erdre)"
+                                target="_blank"rel="noopener">En savoir plus</a>
+
+                        </div>
+                    </div>
+                    <div class="flip flip-5">
+                        <div class="front front-5" style="background-image: url(./src/culture/Zénith_de_Nantes.png)">
+                            <h2 class="text-shadow">Le Zénith de Nantes</h2>
+                        </div>
+                        <div class="back" style="background-image: url(./src/culture/Zénith_de_Nantes-2.png)">
+                            <h2>Le Zénth de Nantes</h2>
+
+                            <p>Pres de 4000 personnes peuvent se réunir pour voir les plus grands artistes,
+                                assurement la plus belle salle de l'ouest. </p>
+                            <a href="https://www.lanuitdelerdre.fr/"
+                                target="_blank"rel="noopener">En savoir plus</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="address">
+            <div class="title">
+                <h2>Les bonnes adresses</h2>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/cave.png" alt="Des bouteilles de vin dans un magasin">
+                        </div>
+                        <div class="details">
+                            <a href="https://www.label-pop.fr/caves/la-cave-de-lerdre/" target="_blank" rel="noopener">
+                                <h3>Les caves de l'Erdre<br><span>cave</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/coeur-a-corps.png" alt="De l alingerie sur des mannequins de femmes">
+                        </div>
+                        <div class="details">
+                            <a href="https://villesetshopping.fr/nort-sur-erdre/annuaire/coeur-a-corps/"target="_blank" rel="noopener">
+                                <h3>Coeur à corps<br><span>lingerie</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/dose.png" alt="La devanture du magasin">
+                        </div>
+                        <div class="details">
+                            <a href="https://villesetshopping.fr/nort-sur-erdre/annuaire/epicerie-dose/"target="_blank" rel="noopener">
+                                <h3>Dose<br><span>épicerie bio</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/sablonneuse.png" alt="Une planche avec du fromage et de la charcuterie">
+                        </div>
+                        <div class="details">
+                            <a href=""target="_blank" rel="noopener">
+                                <h3>La Sablonneuse<br><span>restaurant</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/graine.png" alt="La devanture du magasin">
+                        </div>
+                        <div class="details">
+                            <a href="http://www.grainesdebio.com/"target="_blank" rel="noopener">
+                                <h3>Graine de bio<br><span>Alimentation bio</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/rabouin.png" alt="La devanture du magasin">
+                        </div>
+                        <div class="details">
+                            <a href="https://www.traiteur-rabouin.fr/"target="_blank" rel="noopener">
+                                <h3>Rabouin<br><span>traiteur</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <img src="src/good-plan/lili.png" alt="La devantue du magasin">
+                        </div>
+                        <div class="details">
+                            <a href="https://villesetshopping.fr/nort-sur-erdre/annuaire/lili-rose/"target="_blank" rel="noopener">
+                                <h3>Lili Rose<br><span>habillement</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="sub-footer">
+            <div class="map">
+                <a href="https://goo.gl/maps/FyWQ37wUBWghgL5X8" target="_blank" title="lien vers googlemap"rel="noopener"><img
+                        src="./src/carte.png" alt="une carte du departement avec la positiion du château"></a>
+            </div>
+
+            <div class="credit">
+                <div class="legal">
+                    <div class="sub-legal-1">
+                        <p>Copyright &copy;<span id="year"></span>
+                            <a href="">Injected with WebMdesign</a>
+                    </div>
+                    <div class="sub-legal-2">
+                        <a href="./mentions-legales.html">Mentions légales</a>
+                        <a href="./RGPD.html">RGPD</a>
+                        <a href="./CGV.html">CGV</a>
+                    </div>
+                </div>
+                <div class="networks">
+                    <a href="https://www.facebook.com/guiet.nicolas.5"target="_blank"rel="noopener"><i class="fab fa-facebook-square"title="l'adresse et les horaires"></i></a>
+                    <a href="https://www.instagram.com/guietnicolas/?hl=fr"target="_blank"rel="noopener"><i class="fab fa-instagram-square"title="l'adresse et les horaires"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- CDN DE FANCY BOX -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- SCRIPT FANCY BOX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--JQUERY FOR NAVBAR SCROLL DOWN-->
+    <script src="js/navbar-scroll.js"></script>
+    <!--NAVBAR SCROLL DOWN-->
+
+    <script src="/js/swiper.min.js"></script><!--  JS SWIPER -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            initialSlide: 3,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 500,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script> <!-- AMORCE SWIPER -->
+    <script>
+        //year//
+        var date = (new Date().getFullYear()).toString();
+        document.getElementById("year").innerHTML = date;
+    </script>
+
+</body>
+
+</html>

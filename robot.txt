@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:/bedrooms.html
+Disallow:/about-us.html
+Disallow:/near.html
+Disallow:/reservation.html
+Disallow:/contact.html
+Disallow:/CGV.html
+Disallow:/mentions-legales.html
+Disallow:/RGPD.html
+Sitemap: https://chateau-de-montreuil.netlify.app/sitemap.xml
