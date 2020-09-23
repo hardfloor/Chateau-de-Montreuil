@@ -33,6 +33,11 @@ overflow-x: hidden;
             @include responsive (tab) {
                 font-size: 2.1rem;
             }
+            @include responsive (mediumtab) {
+               padding-top:250px
+            }
+
+
 
             &::before {
                 content: "";
@@ -161,7 +166,7 @@ overflow-x: hidden;
                     font-family: $police-title;
                     letter-spacing: 2px;
                     @include responsive (mediumdesk) {
-                        font-size:1.5rem;
+                        font-size:1.4rem;
                     }
                     &:hover {
                         color: $police-color;

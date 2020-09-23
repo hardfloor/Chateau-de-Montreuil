@@ -81,7 +81,7 @@
 
         @include responsive (tab) {
             width: 310px;
-            height: 160px;
+            height: 180px;
             top: 600px;
             left: 11%;
 
@@ -127,7 +127,7 @@
             font-size: $police-p;
 
             @include responsive (tab) {
-                font-size: 1.6rem;
+                font-size: 1.2rem;
             }
 
         }
@@ -163,13 +163,10 @@
             }
                
 
-            @include responsive (tab) {
-
-                width: 150px;
-            }
+        
 
             @include responsive (tab) {
-                width: 100px;
+                width: 120px;
                 height: 30px;
                 font-size: 1.5rem;
             }
@@ -228,8 +225,8 @@
                 margin-bottom: 80px;
                 padding-top: 150px;
 
-                @include responsive (mediumtab) {
-                    font-size: 2.5rem;
+                @include responsive (tab) {
+                    font-size: 2.1rem;
                 }
 
                 &::before {
@@ -442,8 +439,8 @@
                 margin-bottom: 80px;
                 padding-top: 150px;
 
-                @include responsive (mediumtab) {
-                    font-size: 2.5rem;
+                @include responsive (tab) {
+                    font-size: 2.1rem;
                 }
 
                 &::before {
@@ -461,7 +458,7 @@
                     }
 
                     @include responsive (smalldesk) {
-                        left: -20px;
+                        left: -30px;
                     }
 
                     @include responsive (mediumtab) {
@@ -487,7 +484,7 @@
                     }
 
                     @include responsive (smalldesk) {
-                        right: -20px;
+                        right: -30px;
                     }
 
                     @include responsive (mediumtab) {
@@ -540,7 +537,7 @@
             .card {
                 position: relative;
                 max-width: 330px;
-                height: 300px;
+                height: 320px;
                 background: #e7ecee;
                 margin: 30px 10px;
                 padding: 20px 15px;
@@ -590,12 +587,22 @@
                         font-family: $police-title;
                         position: absolute;
                         top: -40px;
+                        @include responsive (mediumdesk) {
+                            top: -60px;
+                        }
+                        @include responsive (smalldesk) {
+                            font-size: 2.1rem;
+                        }
                     }
 
                     p {
                         font-size: $police-p;
                         color: $police-color;
                         font-family: $police-title;
+                        @include responsive (mediumdesk) {
+                      
+                        }
+
                     }
                 }
 
@@ -620,6 +627,11 @@
                     text-decoration: none;
                     font-size: $police-p;
                     font-family: $police-title;
+
+
+                    @include responsive (mediumdesk) {
+                        bottom: -50px;
+                    }
 
                     @include responsive (tab) {
                         bottom: -45px;

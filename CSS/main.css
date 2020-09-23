@@ -366,7 +366,7 @@ html {
 @media only screen and (max-width: 1024px) {
   .hero .intro {
     width: 310px;
-    height: 160px;
+    height: 180px;
     top: 600px;
     left: 11%;
   }
@@ -413,7 +413,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
   .hero .intro p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -449,13 +449,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
   .hero .intro a {
-    width: 150px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .hero .intro a {
-    width: 100px;
+    width: 120px;
     height: 30px;
     font-size: 1.5rem;
   }
@@ -510,9 +504,9 @@ html {
   padding-top: 150px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   #index .carousel .title h2 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -746,9 +740,9 @@ html {
   padding-top: 150px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   #index .castle-history .title h2 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 }
 
@@ -771,7 +765,7 @@ html {
 
 @media only screen and (max-width: 1280px) {
   #index .castle-history .title h2::before {
-    left: -20px;
+    left: -30px;
   }
 }
 
@@ -800,7 +794,7 @@ html {
 
 @media only screen and (max-width: 1280px) {
   #index .castle-history .title h2::after {
-    right: -20px;
+    right: -30px;
   }
 }
 
@@ -845,7 +839,7 @@ html {
 #index .castle-history .sub-card .card {
   position: relative;
   max-width: 330px;
-  height: 300px;
+  height: 320px;
   background: #e7ecee;
   margin: 30px 10px;
   padding: 20px 15px;
@@ -911,6 +905,18 @@ html {
   top: -40px;
 }
 
+@media only screen and (max-width: 1700px) {
+  #index .castle-history .sub-card .card .content h3 {
+    top: -60px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #index .castle-history .sub-card .card .content h3 {
+    font-size: 2.1rem;
+  }
+}
+
 #index .castle-history .sub-card .card .content p {
   font-size: 1.5rem;
   color: #363636;
@@ -938,6 +944,12 @@ html {
   text-decoration: none;
   font-size: 1.5rem;
   font-family: "Didact Gothic", sans-serif;
+}
+
+@media only screen and (max-width: 1700px) {
+  #index .castle-history .sub-card .card a {
+    bottom: -50px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1172,6 +1184,12 @@ body #bg .title h2 {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  body #bg .title h2 {
+    padding-top: 250px;
+  }
+}
+
 body #bg .title h2::before {
   content: "";
   background-image: url(/src/deco/index-deco-left.png);
@@ -1343,7 +1361,7 @@ body #bg #contact .sub-contact .adress a {
 
 @media only screen and (max-width: 1700px) {
   body #bg #contact .sub-contact .adress a {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1603,15 +1621,21 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   line-height: 200px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   #bedrooms .bedrooms-carousel .cb-slideshow li div h3 {
     font-size: 15rem;
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 800px) {
   #bedrooms .bedrooms-carousel .cb-slideshow li div h3 {
     font-size: 12rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #bedrooms .bedrooms-carousel .cb-slideshow li div h3 {
+    font-size: 8rem;
   }
 }
 
@@ -1875,7 +1899,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 @media only screen and (max-width: 800px) {
   #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd {
-    height: 200px;
+    height: 300px;
     /* @include custum-border-2(); */
     border-radius: 0 0 5px 5px;
   }
@@ -1931,6 +1955,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 @media only screen and (max-width: 1700px) {
   #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd p {
     font-size: 1.3rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -1953,7 +1978,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 @media only screen and (max-width: 800px) {
   #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd i {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1967,6 +1992,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-vector-square {
   position: relative;
+  margin-left: -20px;
 }
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-vector-square:after {
@@ -1987,6 +2013,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-bed {
   position: relative;
+  margin-left: -20px;
 }
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-bed:after {
@@ -2008,12 +2035,13 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 @media only screen and (max-width: 800px) {
   #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-bed:after {
     font-size: 1rem;
-    right: -200%;
+    right: -220%;
   }
 }
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-shower {
   position: relative;
+  margin-left: -20px;
 }
 
 #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd .logo-space .fa-shower:after {
@@ -2056,8 +2084,8 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 @media only screen and (max-width: 414px) {
   #bedrooms .selection-bd .main-bd .size-bd .description-bd .details-bd a {
-    width: 80px;
-    height: 25px;
+    width: 110px;
+    height: 30px;
   }
 }
 
@@ -2343,6 +2371,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   #about-us .passion {
     width: 90vw;
     margin: auto;
+    padding: 50px 20px;
   }
 }
 
@@ -2410,6 +2439,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   #about-us .above-paralax .storytelling {
     width: 90vw;
     margin: auto;
+    padding: 50px 20px;
   }
 }
 
@@ -2425,6 +2455,7 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   #about-us .above-paralax .commitment {
     width: 90vw;
     margin: auto;
+    padding: 50px 0px;
   }
 }
 
@@ -2481,9 +2512,15 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 }
 
 #about-us .passion p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: #363636;
   font-family: "Didact Gothic", sans-serif;
+}
+
+@media only screen and (max-width: 800px) {
+  #about-us .passion p {
+    font-size: 1.2rem;
+  }
 }
 
 #about-us .storytelling h3,
@@ -2496,11 +2533,17 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
 
 #about-us .storytelling p,
 #about-us .commitment p {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: white;
   font-family: "Didact Gothic", sans-serif;
   background-color: #363636;
-  margin-right: o0;
+}
+
+@media only screen and (max-width: 800px) {
+  #about-us .storytelling p,
+  #about-us .commitment p {
+    font-size: 1.2rem;
+  }
 }
 
 #reservation .title {
@@ -2531,6 +2574,12 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   position: relative;
   margin-bottom: 80px;
   padding-top: 150px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #reservation .title h2 {
+    font-size: 2.1rem;
+  }
 }
 
 #reservation .title h2::before {
@@ -2667,6 +2716,12 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #reservation .booking-1 a {
+    font-size: 1.3rem;
+  }
+}
+
 #reservation .booking-1 a:hover {
   background-color: #999;
   color: #252424;
@@ -2707,6 +2762,12 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   text-align: center;
   position: relative;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #near #nature .title h2 {
+    font-size: 2.1rem;
+  }
 }
 
 #near #nature .title h2::before {
@@ -2936,6 +2997,12 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   letter-spacing: 2px;
   text-align: center;
   position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  #near #culture .culture .title h2 {
+    font-size: 2.1rem;
+  }
 }
 
 #near #culture .culture .title h2::before {
@@ -3248,6 +3315,12 @@ body #bg #contact .sub-contact form input[type=submit]:hover {
   text-align: center;
   position: relative;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  #near #address .title h2 {
+    font-size: 2.1rem;
+  }
 }
 
 #near #address .title h2::before {

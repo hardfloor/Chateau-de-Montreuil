@@ -21,7 +21,9 @@
                 position: relative;
                 margin-bottom: 50px;
 
-
+                @include responsive (tab) {
+                    font-size: 2.1rem;
+                }
                 &::before {
                     content: "";
                     background-image: url(/src/deco/Fichier-2.png);
@@ -234,7 +236,9 @@
                     @include custum-h2();
                     text-align: center;
                     position: relative;
-                    ;
+                    @include responsive (tab) {
+                        font-size: 2.1rem;
+                    }
 
 
 
@@ -527,7 +531,9 @@
                 text-align: center;
                 position: relative;
                 margin-bottom: 50px;
-
+                @include responsive (tab) {
+                    font-size: 2.1rem;
+                }
 
 
                 &::before {

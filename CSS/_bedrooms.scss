@@ -154,13 +154,18 @@
             padding: 0;
             line-height: 200px;
 
-            @include responsive (mediumtab) {
+            @include responsive (tab) {
 
               font-size: 15rem;
             }
 
-            @include responsive (smartphone) {
+            @include responsive (mediumtab) {
+
               font-size: 12rem;
+            }
+
+            @include responsive (smartphone) {
+              font-size: 8rem;
 
             }
           }
@@ -402,7 +407,7 @@
 
 
             @include responsive (mediumtab) {
-              height: 200px;
+              height: 300px;
 
               /* @include custum-border-2(); */
               border-radius: 0 0 5px 5px;
@@ -457,6 +462,7 @@
 
               @include responsive (mediumdesk) {
                 font-size: 1.3rem;
+                margin-bottom: 20px;
               }
 
 
@@ -474,18 +480,19 @@
               }
 
               @include responsive (mediumtab) {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
               }
             }
 
             .logo-space {
               display: flex;
               justify-content: space-around;
+            
 
               .fa-vector-square {
 
                 position: relative;
-
+margin-left: -20px;
                 &:after {
 
                   content: "20m2";
@@ -508,7 +515,7 @@
               .fa-bed {
 
                 position: relative;
-
+                margin-left: -20px;
                 &:after {
 
                   content: "2 personnes";
@@ -525,7 +532,7 @@
 
                   @include responsive (mediumtab) {
                     font-size: 1rem;
-                    right: -200%;
+                    right: -220%;
                   }
 
                 }
@@ -537,7 +544,7 @@
               .fa-shower {
 
                 position: relative;
-
+                margin-left: -20px;
                 &:after {
 
                   content: "1";
@@ -581,8 +588,8 @@
 
               @include responsive (smartphone) {
 
-                width: 80px;
-                height: 25px;
+                width: 110px;
+                height: 30px;
               }
 
               &:hover {
